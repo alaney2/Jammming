@@ -1,5 +1,5 @@
 const clientId = '310eb094e2784a1d98260e9df1eb75b0';
-const redirectUri = 'http://cickard-jammming.surge.sh';
+const redirectUri = 'http://cickard-jammming.surge.sh/';
 
 let accessToken;
 
