@@ -1,5 +1,5 @@
 const clientId = '310eb094e2784a1d98260e9df1eb75b0';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://cickard-jammming.surge.sh';
 
 let accessToken;
 
@@ -8,7 +8,6 @@ const Spotify = {
     if (accessToken) {
       return accessToken;
     }
-
     const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
     const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
 
@@ -43,7 +42,7 @@ const Spotify = {
       }));
     });
   },
-  async savePlaylist(name, trackUris) {
+  savePlaylist(name, trackUris) {
     if (!name || !trackUris.length) {
       return;
     }
